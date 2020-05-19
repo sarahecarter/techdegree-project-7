@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web App Dashboard</title>
+    <link href="css-toggle-switch-master/dist/toggle-switch.css">
 </head>
 <body>
 
@@ -136,11 +137,115 @@
                     </div>
                 </div>
             </section>
-       <!-- New Members (Row 6 Col 1)-->
-       <!-- Recent Activity (Row 6 Col 2)-->
-       <!-- Message User (Row 7 Col 1)-->
-       <!-- Settings (Row 7 Col 2)-->
 
+       <!-- New Members (Row 6 Col 1)-->
+            <section class="members">
+                <h3>New Members</h3>
+                <div class="members-container">
+                    <img src="images/member-2.jpg">
+                    <div class="members-text">
+                        <p>John Stamos</p>
+                        <a href="mailto:johnstamos@example.com"><p>johnstamos@example.com</p></a>
+                    </div>
+                    <p>5/20/20</p>
+                </div>
+
+                <div class="members-container">
+                    <img src="images/member-3.jpg">
+                    <div class="members-text">
+                        <p>Victoria Chambers</p>
+                        <a href="mailto:victoria@example.com"><p>victoria@example.com</p></a>
+                    </div>
+                    <p>5/20/20</p>
+                </div>
+
+                <div class="members-container">
+                    <img src="images/member-4.jpg">
+                    <div class="members-text">
+                        <p>Josh Young</p>
+                        <a href="mailto:jyoung@example.com"><p>jyoung@example.com</p></a>
+                    </div>
+                    <p>5/20/20</p>
+                </div>
+            </section>
+
+       <!-- Recent Activity (Row 6 Col 2)-->
+            <section class="members">
+                <h3>Recent Activity</h3>
+                <div class="members-container">
+                    <img src="images/member-2.jpg">
+                    <div class="members-text">
+                        <p>John Stamos commented on your post</p>
+                        <p>4 hours ago</p>>
+                    </div>
+                    <p>></p>
+                </div>
+
+                <div class="members-container">
+                    <img src="images/member-3.jpg">
+                    <div class="members-text">
+                        <p>Victoria Chambers shared an article</p>
+                        <p>6 hours ago</p>>
+                    </div>
+                    <p>></p>
+                </div>
+
+                <div class="members-container">
+                    <img src="images/member-4.jpg">
+                    <div class="members-text">
+                        <p>Josh Young liked your post</p>
+                        <p>1 day ago</p>>
+                    </div>
+                    <p>></p>
+                </div>
+            </section>
+
+       <!-- Message User (Row 7 Col 1)-->
+            <section class="message">
+                <h3>Message User</h3>
+                <form class="widget-container">
+                    <input type="text" placeholder="Search for User" class="form-field" id="userField">
+                    <textarea placeholder="Message for User" class="form-area" id="messageField"></textarea>
+                    <button class="button-primary" id="send">Send</button>
+                </form>
+            </section>
+
+       <!-- Settings (Row 7 Col 2)-->
+            <section class="settings">
+                <h3>Settings</h3>
+                <label class="switch-light switch-material" onclick="">
+                    <input type="checkbox">
+                    <strong>Send Email Notifications</strong>
+                    <span>
+                        <span>On</span>
+                        <span>Off</span>
+                        <a></a>
+                    </span>
+                </label>
+
+                <label class="switch-light switch-material" onclick="">
+                    <input type="checkbox">
+                    <strong>Set Profile to Public</strong>
+                    <span>
+                        <span>On</span>
+                        <span>Off</span>
+                        <a></a>
+                    </span>
+                </label>
+
+                <select class="form-field" id="timezone">
+                    <option disabled selected>Select Timezone</option>
+                    <option>Eastern</option>
+                    <option>Central</option>
+                    <option>Mountain</option>
+                    <option>Pacific</option>
+                </select>
+
+                <div class="settings-button">
+                    <button class="button-primary" id="save">Save</button>
+                    <button class="button-disabled" id="cancel">Cancel</button>
+                </div>
+            </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 </body>

@@ -1,6 +1,6 @@
-///// Chart Widgets /////
+/////////////// Chart Widgets ////////////////
 
-// Line Graph //
+/////// Line Graph ////////
 const trafficCanvas = document.getElementById('traffic-chart');
 
 // Data for traffic chart //
@@ -43,4 +43,39 @@ let trafficChart = new Chart(trafficCanvas, {
     type: 'line',
     data: trafficData,
     options: trafficOptions
+});
+
+/////// Bar Graph ////////
+const dailyChart = document.getElementById('daily-chart');
+
+// Data for daily chart //
+let dailyData = {
+    labels: ["S", "M", "T", "W", "T", "F", "S"],
+    datasets: [{
+        label: '# of Hits',
+        data: [85, 120, 216, 89, 96, 200, 150],
+        backgroundColor: 'rgb(80, 83, 175)',
+        borderWidth: 1
+    }]
+};
+
+// Chart Options //
+let dailyOptions = {
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    },
+    legend: {
+        display: false
+    }
+}
+
+// Creating the chart //
+let DailyChart = new Chart(dailyChart, {
+    type: 'bar',
+    data: dailyData,
+    options: dailyOptions
 });

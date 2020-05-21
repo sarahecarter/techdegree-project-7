@@ -45,8 +45,10 @@ let trafficChart = new Chart(trafficCanvas, {
     options: trafficOptions
 });
 
+
+
 /////// Bar Graph ////////
-const dailyChart = document.getElementById('daily-chart');
+const dailyCanvas = document.getElementById('daily-chart');
 
 // Data for daily chart //
 let dailyData = {
@@ -74,8 +76,45 @@ let dailyOptions = {
 }
 
 // Creating the chart //
-let DailyChart = new Chart(dailyChart, {
+let dailyChart = new Chart(dailyCanvas, {
     type: 'bar',
     data: dailyData,
     options: dailyOptions
+});
+
+
+
+/////// Pie Chart ////////
+const mobileCanvas = document.getElementById('mobile-chart');
+
+// Data for mobile chart //
+let mobileData = {
+    labels: ["Desktop", "Tablet", "Phones"],
+    datasets: [{
+        label: '# of Users',
+        data: [2000, 550, 500],
+        backgroundColor: [
+            'rgb(80, 83, 175)',
+            'rgb(115, 191, 191)',
+            'rgb(115, 191, 134)'
+        ]
+    }]
+};
+
+// Chart Options //
+let mobileOptions = {
+    legend : {
+        position: 'right',
+        labels: {
+            boxWidth: 20,
+            fontStyle: 'bold'
+        }
+    }
+}
+
+// Creating the chart //
+let mobileChart = new Chart(mobileCanvas, {
+    type: 'doughnut',
+    data: mobileData,
+    options: mobileOptions
 });

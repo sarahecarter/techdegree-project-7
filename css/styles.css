@@ -11,10 +11,15 @@ header {
     padding-right: 10px;
 }
 
+header h1 {
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
 .primary-propic {
     padding: 10px;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 40px;
 }
 
@@ -28,6 +33,12 @@ header {
 
 .bell {
     padding: 20px;
+}
+
+.bell img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
 }
 
 /* Nav Styles */
@@ -226,11 +237,7 @@ nav {
 
 
 /* SVG */
-.bell img{
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-}
+
 
 
 .nav-icon {
@@ -260,15 +267,23 @@ nav {
         padding: 10px;
     }
 
-    .main-content {
-        padding: 10px;
-    }
-
     .traffic h3,
     .daily h3,
     .mobile h3,
     .social h3 {
         text-align: left;
+    }
+
+    .daily {
+        border-right: 1px solid lightgray;
+    }
+
+    .mobile {
+        padding-left: 10px;
+    }
+
+    .social {
+        border-top: 1px solid lightgray;
     }
 
     .social-boxes {

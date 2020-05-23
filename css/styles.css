@@ -2,15 +2,72 @@
     font-family: 'Nunito', sans-serif;
 }
 
+/* Header Styles */
+header {
+    background: #9585c7;
+    display: flex;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.primary-propic {
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+}
+
+.primary-profile {
+    padding: 10px;
+}
+
+.app-title {
+    flex-grow: 2;
+}
+
+.bell {
+    padding: 20px;
+}
+
+/* Nav Styles */
+nav {
+    background: #53408c;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Dashboard Styles */
+
+
+/* Images */
+.propic {
+    width: 60px;
+    heigth: 60px;
+    border-radius: 50px;
+}
 
 
 /* SVG */
 .bell img{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
 }
 
 .social-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+    background: #9585c7;
+    padding: 10px;
+}
+
+
+
+.nav-icon {
     width: 50px;
     height: 50px;
 }

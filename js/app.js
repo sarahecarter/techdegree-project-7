@@ -8,7 +8,7 @@ alertBanner.innerHTML =
 `
 <div class="alert-banner">
     <p><strong>Alert:</strong> You have <strong>5</strong> overdue tasks to complete.</p>
-    <p class="alert-banner-close">x</p>
+    <p class="alert-banner-close">X</p>
 </div>
 `
 

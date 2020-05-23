@@ -40,12 +40,180 @@ nav {
 }
 
 /* Dashboard Styles */
+.main-dashboard {
+    padding: 20px;
+}
+
+.main-dashboard h2 {
+    text-align: center;
+}
+
+.dash-search {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+/* Alert Styles */
+.alert-banner {
+    color: white;
+    background-color: #6850af;
+    text-align: center;
+    padding: 1px;
+}
+
+/* Traffic Chart */
+.traffic-header h3 {
+    text-align: center;
+}
+
+.traffic-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: gray;
+}
+
+/* Daily Chart */
+.daily h3 {
+    text-align: center;
+}
+
+/* Mobile Chart */
+.mobile h3 {
+    text-align: center;
+}
+
+/* Socials */
+.social h3 {
+    text-align: center;
+}
+
+.twitter, 
+.facebook,
+.google {
+    border: 1px solid lightgray;
+    background-color: #f0eef7;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.social-image {
+    width: 60px;
+    height: 60px;
+    background: #9585c7;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.social-text h4 {
+    color: #6850af;
+}
+
+/* New Members and Recent Activity*/
+.members,
+.activity {
+    border: 1px solid lightgray;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 5px;
+}
+
+.members h2,
+.activity h2 {
+    padding-bottom: 10px;
+}
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: gray;
+}
+
+
+
+/* Message */
+.message {
+    border: 1px solid lightgray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.form-field {
+    width: 90%;
+    margin-bottom: 10px;
+    height: 30px;
+    padding-left: 10px
+}
+
+.form-area {
+    width: 90%;
+    height: 100px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+}
+
+.button-primary {
+    color: white;
+    font-weight: bold;
+    background-color: #6850af;
+    height: 30px;
+    border-radius: 3px;
+    width: 50%;
+}
+
+/* Settings */
+.settings {
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch-light {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.switch-light span {
+    margin-left: 10px;
+}
+
+.button-secondary {
+    color: white;
+    font-weight: bold;
+    background-color: #6850af;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.button-disabled {
+    height: 30px;
+}
 
 
 /* Images */
 .propic {
     width: 60px;
-    heigth: 60px;
+    height: 60px;
     border-radius: 50px;
 }
 
@@ -56,15 +224,6 @@ nav {
     height: 30px;
     padding: 5px;
 }
-
-.social-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 60px;
-    background: #9585c7;
-    padding: 10px;
-}
-
 
 
 .nav-icon {

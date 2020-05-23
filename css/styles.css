@@ -246,6 +246,10 @@ nav {
         justify-content: space-evenly;
     }
     
+    .alert-banner {
+        width: 100%;
+    }
+
     nav {
         flex-direction: column;
         justify-content: flex-start;

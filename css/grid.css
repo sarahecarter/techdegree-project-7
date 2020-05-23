@@ -18,6 +18,10 @@ nav {
     grid-area: nav;
 }
 
+.alert-banner {
+    grid-area: alert;
+}
+
 .main-content {
     display: grid;
     grid-area: main;
@@ -30,12 +34,13 @@ nav {
 /* Media Queries */
 @media (min-width: 768px) {
     .grid-container {
-        grid-template-columns: 55px 1fr;
+        grid-template-columns: 80px 1fr 1fr;
         grid-template-areas: 
             "header header"
-            "nav main"
-        ;
+            "nav main";
     }
+
+    
 
     .main-content {
         grid-template-columns: 50%;

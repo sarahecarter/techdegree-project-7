@@ -86,10 +86,15 @@ nav {
     text-align: center;
 }
 
+.mobile {
+    margin-bottom: 20px;
+}
+
 /* Socials */
 .social h3 {
     text-align: center;
 }
+
 
 .twitter, 
 .facebook,
@@ -100,7 +105,6 @@ nav {
     padding: 10px;
     display: flex;
     justify-content: center;
-    width: 90%;
 }
 
 .social-image {
@@ -172,13 +176,16 @@ nav {
     font-weight: bold;
     background-color: #6850af;
     height: 30px;
-    border-radius: 3px;
     width: 50%;
 }
 
 /* Settings */
 .settings {
     border: 1px solid lightgray;
+    text-align: center;
+}
+
+.settings-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,4 +236,55 @@ nav {
 .nav-icon {
     width: 50px;
     height: 50px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .main-dashboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .nav-icon {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .traffic h3,
+    .daily h3,
+    .mobile h3,
+    .social h3 {
+        text-align: left;
+    }
+
+    .social-boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .twitter, 
+    .facebook,
+    .google {
+        width: 30%;
+    }
+
+    .members h2,
+    .activity h2,
+    .message h3,
+    .settings h3 {
+        text-align: left;
+        padding-left: 10px;
+    }
+    
 }

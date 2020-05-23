@@ -250,7 +250,8 @@ nav {
     .main-dashboard {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        text-align: left;
     }
     
     .alert-banner {

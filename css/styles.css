@@ -35,10 +35,15 @@ header h1 {
     padding: 20px;
 }
 
+.bell img:hover {
+    transform: scale(1.4) rotate(20deg);
+}
+
 .bell img {
     width: 20px;
     height: 20px;
     padding: 5px;
+    transition: .5s;
 }
 
 /* Nav Styles */

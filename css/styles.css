@@ -252,6 +252,22 @@ nav {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
+        padding: 0;
+    }
+
+    .main-dashboard h2 {
+        font-size: 1.3em;
+        padding-left: 20px;
+    }
+
+    .main-searchbar {
+        width: 300px;
+        padding-top: 20px;
+        padding-left: 350px;
+        border-left: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        background-color: #f2f2f2;
+        
     }
     
     .alert-banner {
@@ -285,6 +301,7 @@ nav {
 
     .social {
         border-top: 1px solid lightgray;
+        padding-bottom: 10px;
     }
 
     .social-boxes {
@@ -299,12 +316,16 @@ nav {
         width: 30%;
     }
 
-    .members h2,
-    .activity h2,
+    .members h3,
+    .activity h3,
     .message h3,
     .settings h3 {
         text-align: left;
         padding-left: 10px;
     }
     
+    .members,
+    .activity {
+        padding-top: 0;
+    }
 }

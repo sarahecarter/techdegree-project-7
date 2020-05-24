@@ -77,7 +77,7 @@ nav {
 /* Media Queries */
 @media (min-width: 768px) {
     .grid-container {
-        grid-template-columns: 80px 40% 40%;
+        grid-template-columns: 80px 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
             "header header header"
@@ -104,7 +104,7 @@ nav {
     }
 
     .widget-container-full {
-        width: 75vw;
+        width: 80vw;
     }
 
     .widget-container-half {

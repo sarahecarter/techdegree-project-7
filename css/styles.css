@@ -80,6 +80,10 @@ nav {
     padding: 1px;
 }
 
+.alert-banner-close {
+    cursor: pointer;
+}
+
 /* Traffic Chart */
 .traffic-header h3 {
     text-align: center;

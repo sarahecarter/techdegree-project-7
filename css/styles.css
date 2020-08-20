@@ -37,6 +37,7 @@ header h1 {
 
 .bell img:hover {
     transform: scale(1.4) rotate(20deg);
+    cursor: pointer;
 }
 
 .bell img {

@@ -39,3 +39,65 @@ send.addEventListener('click', () => {
         alert('Message successfully sent to: ${user.value}');
     }
 });
+
+// Autocomplete Function
+
+////////////// Settings Section ///////////////
+// Local Storage
+//variables = save button, checkboxes, time zone
+let save = document.getElementById('save');
+let emailNotifications = document.getElementById('emails');
+let publicProfile = document.getElementById('public');
+let timeZone = document.getElementById('timezone');
+
+//setting functions
+function setCheckBox(checkbox, value) {
+    if (checkbox.checked) {
+        localStorage.setItem(value, 'on');
+    }
+    else {
+        localStorage.setItem(value, 'off');
+    }
+}
+
+function setTimeZone() {
+    let timeZoneSelected = timeZone.value;
+    localStorage.setItem('timeZone', timeZoneSelected);
+}
+
+//getting functions
+function getTimeZone() {
+    let selectedTimeZone = localStorage.getItem('timeZone');
+    timeZone.value = selectedTimeZone;
+}
+
+//adds an event listener to the save button
+save.addEventListener('click', () => {
+    setCheckBox(emailNotifications, 'emailNotifications');
+    setCheckBox(publicProfile, 'publicProfile');
+    setTimeZone();
+})
+
+//conditionals check what is stored in local storage keys and adjusts buttons on refresh
+if (localStorage.getItem('emailNotifications') === 'on') {
+    emailNotifications.checked = true;
+}
+
+if (localStorage.getItem('publicProfile') === 'on') {
+    publicProfile.checked = true;
+}
+
+getTimeZone();
+
+
+// Clear Local settings
+let cancel = document.getElementById('cancel');
+//adds event listener to cancel button
+cancel.addEventListener('click', () => {
+    emailNotifications.checked = false;
+    publicProfile.checked = false;
+    timeZone.value = 'Select Timezone';
+})
+
+
+

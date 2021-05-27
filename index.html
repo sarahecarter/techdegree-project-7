@@ -52,10 +52,10 @@
                 <div class="traffic-header">
                     <h3>Traffic</h3>
                     <ul class="traffic-nav">
-                        <li>Hourly</li>
-                        <li>Daily</li>
-                        <li>Weekly</li>
-                        <li>Monthly</li>
+                        <li id="hourly">Hourly</li>
+                        <li id="daily">Daily</li>
+                        <li id="weekly">Weekly</li>
+                        <li id="monthly">Monthly</li>
                     </ul>
                 </div>
                 <div class="widget-container-full">
@@ -213,8 +213,9 @@
        <!-- Message User -->
             <section class="message">
                 <h3>Message User</h3>
-                <form class="widget-container">
+                <form class="widget-container" autocomplete="off">
                     <input type="text" placeholder="Search for User" class="form-field" id="userField">
+                    <ul id="autocomplete"></ul>
                     <textarea placeholder="Message for User" class="form-area" id="messageField"></textarea>
                     <button class="button-primary" id="send">Send</button>
                 </form>
@@ -261,7 +262,8 @@
             
         </div>
         
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js" integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
     <script src="js/app.js"></script>
     <script src="js/chart.js"></script>
 </body>

@@ -178,11 +178,15 @@ nav {
     padding-bottom: 10px;
 }
 
+form {
+    position: relative;
+}
+
 .form-field {
     width: 90%;
     margin-bottom: 10px;
     height: 30px;
-    padding-left: 10px
+    padding-left: 10px;
 }
 
 .form-area {
@@ -198,6 +202,22 @@ nav {
     background-color: #6850af;
     height: 30px;
     width: 50%;
+}
+
+#autocomplete {
+    list-style-type: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    margin: 0;
+    padding-left: 10px;
+    
+}
+
+#autocomplete li {
+    border: 1px solid gray;
+    background-color: white;
+    width: 130%;
 }
 
 /* Settings */

@@ -23,7 +23,7 @@ alertBanner.addEventListener('click', e => {
 ////////////// Messaging Section ///////////////
 
 // Variables //
-const user = document.getElementById('userField');
+let user = document.getElementById('userField');
 const message = document.getElementById('messageField');
 const send = document.getElementById('send');
 
@@ -41,6 +41,31 @@ send.addEventListener('click', () => {
 });
 
 // Autocomplete Function
+let users = ['John Stamos', 'Victoria Chambers', 'Josh Young', 'Jane Smith'];
+let autocompleteUL = document.getElementById('autocomplete');
+user.addEventListener('keyup', (e) => {
+    if (e.target.value.length > 0) {
+        autocompleteUL.style.display = 'block';
+    //filters user array checking that input matches 
+    let usersFound = users.filter(user => user.toLowerCase().includes(e.target.value));
+    //creates an li element for each user found
+    usersFound = usersFound.map(user => `<li>${user}</li>`);
+    //uses conditional ternary operator to join li elements 
+    let listHTML = !usersFound.length ? '' : usersFound.join('');
+    autocompleteUL.innerHTML = listHTML;
+    }
+    else {
+        autocompleteUL.style.display = 'none';
+    }
+})
+
+autocompleteUL.addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+        user.value = e.target.textContent;
+        autocompleteUL.style.display = 'none';
+        
+    }
+})
 
 ////////////// Settings Section ///////////////
 // Local Storage
@@ -97,6 +122,7 @@ cancel.addEventListener('click', () => {
     emailNotifications.checked = false;
     publicProfile.checked = false;
     timeZone.value = 'Select Timezone';
+    localStorage.clear();
 })
 
 
